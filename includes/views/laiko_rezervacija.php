@@ -39,9 +39,14 @@
             </div>
 <?php
 
- require_once('includes\classes\DB.php');
+ //require_once('includes\classes\DB.php');
 
-
+$host = '87.239.114.209';
+$dbName = 'projektui';
+$username = 'remote';
+$password = '6wV2Md306bvmBeCO';
+$db = new PDO('mysql:host='.$host.';dbname='.$dbName.';charset=utf8', $username, $password);
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
  $stmt = $db->prepare('SELECT * FROM events');
 
