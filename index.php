@@ -17,8 +17,8 @@ function loadClasses2($class_name){
     require_once('./includes/routes/Routes.php');
 
 
-    error_reporting(0);
-    ini_set('display_errors', 0);
+  //  error_reporting(0);
+   // ini_set('display_errors', 0);
 
 
  ?>
