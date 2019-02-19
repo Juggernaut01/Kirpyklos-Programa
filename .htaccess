@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/includes/controllers/backend_create.php
+RewriteCond %{REQUEST_URI} !^/includes/controllers/backend_delete.php
+RewriteCond %{REQUEST_URI} !^/includes/controllers/backend_move.php
+RewriteCond %{REQUEST_FILENAME} !\.(png|jpg|gif|js)$
+
+RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
